@@ -9,6 +9,7 @@ class ShopController extends Controller
 {
     public function index(Request $request)
     {
+
         $page = $request->query("page");
         $size = $request->query("size");
         if(!$page)
